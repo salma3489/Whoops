@@ -1,0 +1,214 @@
+body{
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #272930;
+    height: 85px;
+    position: relative;
+}
+
+.nav-link{
+    color: #fff !important;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.nav-link:hover{
+    background-color: #1a1c21;
+}
+
+.nav-item{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+.navbar-brand{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar::before{
+    content:"";
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    background-color: grey;
+}
+
+.navbar::After{
+    content:"";
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    left: 1100px;
+    top: 0px;
+    background-color: grey;
+}
+
+.search{
+    position:absolute;
+    left:100px;
+}
+.search input[type=text]{
+    background-color: #202228;
+    border: none;
+    margin:0px;
+}
+/* .sign-buttons{
+    margin-left: 50px;
+}
+.signup{
+    background-color: #7c7f85;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 2px;
+    font-weight: bold;
+    border:none;
+}
+
+.signin{
+    background-color: #2d6ff7;
+    color: white;
+    padding: 2px 17px;
+    border-radius: 2px;
+    font-weight: bold;
+    border:none;
+}
+.signin:hover{
+    background-color: #f05555;
+}
+
+.signup:hover{
+    background-color: #f05555;
+} */
+
+.bg-img img{
+    position: relative;
+}
+.caption{
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    left:40px;
+}
+.caption h4{
+    padding-bottom: 25px;
+}
+.ask-button{
+    position: absolute;
+    top: 220px;
+    right: 120px;
+}
+
+.ask-button button{
+    border:none;
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.ask-button button:hover{
+    background-color: #7c7f85;
+}
+
+.ask-button a{
+    border:none;
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.ask-button a:hover{
+    background-color: #7c7f85;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+/*.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}*/
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=username] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password], .form-container input[type=username]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #2d6ff7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #f05555;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
